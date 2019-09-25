@@ -1,0 +1,22 @@
+{
+    "apps":
+    {
+      "name": "orm",
+      "cwd": "./",
+      "args": "-r tsconfig-paths/register",
+      "script": "src/main.ts",
+      "ignore_watch": [
+        "node_modules",
+        ".vscode"
+      ],
+      "exec_interpreter": "C:/nodejs/ts-node",
+      "instances": "max",
+      "min_uptime": "90s",
+      "max_restarts": 30,
+      "exec_mode" : "cluster_mode",
+      "error_file" : "./.vscode/test-err.log",
+      "out_file": "./.vscode/test-out.log",
+      "pid_file": "./.vscode/test.pid",
+      "watch": false
+    }
+  }
