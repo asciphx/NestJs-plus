@@ -4,12 +4,12 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 
 import { ErrorsInterceptor } from './core/interceptors/errors.interceptor';
 import { AdminUsersModule } from './feature/admin_users/admin_users.module';
-import { UsersModule } from './feature/users/users.module';
+import { UserModule } from './feature/user/user.module';
 
 @Module({
     imports: [
         TypeOrmModule.forRoot(),    //  建立 typeorm 与数据库的连接
-        UsersModule,
+        UserModule,
         AdminUsersModule
     ],
     providers: [

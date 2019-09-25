@@ -1,7 +1,7 @@
 import { forwardRef, Module } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 
-import { UsersModule } from '../../feature/users/users.module';
+import { UserModule } from '../../feature/user/user.module';
 import { AuthService } from './auth.service';
 import { AuthStrategy } from './auth.strategy';
 
@@ -13,7 +13,7 @@ import { AuthStrategy } from './auth.strategy';
                 expiresIn: 3600
             }
         }),
-        forwardRef(() => UsersModule)    // 处理模块间的循环依赖
+        forwardRef(() => UserModule)    // 处理模块间的循环依赖
     ],
     providers: [AuthService, AuthStrategy],
     exports: [AuthService]  // 导出 AuthServie 供 UserModule 使用
