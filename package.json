@@ -1,0 +1,42 @@
+{
+    "name": "easy-post",
+    "version": "1.0.0",
+    "description": "Easy post system.",
+    "main": "main.ts",
+    "scripts": {
+        "start": "ts-node -r tsconfig-paths/register src/main.ts",
+        "start:watch": "nodemon",
+        "pm2": "pm2 start .json",
+        "debug": "node --inspect-brk -r ts-node/register src/main.ts",
+        "debug:watch": "nodemon --config nodemon-debug.json",
+        "check": "tslint -p tsconfig.json -c tslint.json",
+        "fix": "tslint -p tsconfig.json -c tslint.json --fix"
+    },
+    "author": "dzzzzzy",
+    "license": "MIT",
+    "dependencies": {
+        "@nestjs/common": "^6.5.3",
+        "@nestjs/core": "^6.5.3",
+        "@nestjs/jwt": "^6.1.1",
+        "@nestjs/passport": "^6.1.0",
+        "@nestjs/platform-express": "^6.5.3",
+        "@nestjs/typeorm": "^6.1.3",
+        "mongodb": "^3.3.2",
+        "passport": "^0.4.0",
+        "passport-jwt": "^4.0.0",
+        "reflect-metadata": "^0.1.13",
+        "rxjs": "^6.5.2",
+        "socket.io": "^2.2.0",
+        "typeorm": "^0.2.15",
+        "typescript": "^3.5.3",
+        "underscore": "^1.9.1"
+    },
+    "devDependencies": {
+        "@types/node": "^11.9.4",
+        "@types/passport-jwt": "^3.0.1",
+        "nodemon": "^1.19.1",
+        "ts-node": "^8.3.0",
+        "tsconfig-paths": "^3.8.0",
+        "tslint": "^5.18.0"
+    }
+}

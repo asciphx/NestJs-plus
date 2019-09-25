@@ -1,0 +1,11 @@
+{
+    "type": "mongodb",
+    "url": "mongodb://127.0.0.1:28001,127.0.0.1:28002,127.0.0.1:28003/nest?replicaSet=exchange_rs_0&useUnifiedTopology=true&poolSize=20",
+    "useNewUrlParser": true,
+    "hostname":"127.0.0.1",
+    "entities": [
+        "src/**/**.entity{.ts,.js}"
+    ],
+    "synchronize": false,
+    "logging": true
+}
